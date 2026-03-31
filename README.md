@@ -14,11 +14,11 @@ Technologies Used
 - REST API architecture
 
 Project Structure
-emotional-alchemy-backend
- main.py # Main API server
- api_service.py # Core sentiment analysis logic
- requirements.txt # Python dependencies
- Procfile # Deployment configuration
+-emotional-alchemy-backend
+ -main.py # Main API server
+ -api_service.py # Core sentiment analysis logic
+ -requirements.txt # Python dependencies
+ -Procfile # Deployment configuration
 
 Installation
 1. Clone the repository
@@ -31,6 +31,7 @@ pip install -r requirements.txt
 python main.py
 
 API Function
+
 The backend receives text input from the mobile app and returns a calculated mood score based on sentiment analysis.
 
 Example workflow:
@@ -40,10 +41,11 @@ Example workflow:
 4. A mood score is returned to the app
 
 Security
+
 Sensitive configuration values such as API keys are stored in a `.env` file and excluded from the repository using `.gitignore`.
 
 Related Project
-Frontend mobile application built using **Flutter and Firebase**.
+-Frontend mobile application built using **Flutter and Firebase**.
 Frontend repository:
 https://github.com/Angelmarykissinger/emotional-alchemy
 
