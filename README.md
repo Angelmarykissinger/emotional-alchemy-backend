@@ -15,11 +15,10 @@ Technologies Used
 
 Project Structure
 emotional-alchemy-backend
-│
-├── main.py # Main API server
-├── api_service.py # Core sentiment analysis logic
-├── requirements.txt # Python dependencies
-└── Procfile # Deployment configuration
+ main.py # Main API server
+ api_service.py # Core sentiment analysis logic
+ requirements.txt # Python dependencies
+ Procfile # Deployment configuration
 
 Installation
 1. Clone the repository
