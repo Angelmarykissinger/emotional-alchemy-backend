@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from api_service import get_gemini_reply
+from api_service import get_gemini_reply, analyze_mood
 import os
 
 app = FastAPI()
@@ -35,3 +35,11 @@ def home():
 def chat(req: ChatRequest):
     reply = get_gemini_reply(req.message)
     return {"response": reply}
+
+# -----------------------------
+# Analyze Mood Endpoint
+# -----------------------------
+@app.post("/analyze_mood")
+def analyze_mood_endpoint(req: ChatRequest):
+    result = analyze_mood(req.message)
+    return result
