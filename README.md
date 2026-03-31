@@ -14,11 +14,12 @@ Technologies Used
 - REST API architecture
 
 Project Structure
--emotional-alchemy-backend
- -main.py # Main API server
- -api_service.py # Core sentiment analysis logic
- -requirements.txt # Python dependencies
- -Procfile # Deployment configuration
+
+emotional-alchemy-backend
+ - main.py # Main API server
+ - api_service.py # Core sentiment analysis logic
+ - requirements.txt # Python dependencies
+ - Procfile # Deployment configuration
 
 Installation
 1. Clone the repository
@@ -45,7 +46,8 @@ Security
 Sensitive configuration values such as API keys are stored in a `.env` file and excluded from the repository using `.gitignore`.
 
 Related Project
--Frontend mobile application built using **Flutter and Firebase**.
+
+Frontend mobile application built using **Flutter and Firebase**.
 Frontend repository:
 https://github.com/Angelmarykissinger/emotional-alchemy
 
